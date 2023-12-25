@@ -1,3 +1,78 @@
-*{
-    background-color: bisque;
+* {
+  align-items: center;
+  margin: auto;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: rgb(6, 11, 27);
+}
+
+h1 {
+  color: rgb(46, 44, 48);
+  text-align: center;
+  background-color: aliceblue;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  height: 75vh;
+}
+
+.everything {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.scoreboard {
+  color: white;
+  padding: 10px 15px;
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.choice {
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  border-radius: 100px;
+}
+.choice:hover {
+  transform: scale(110%);
+  transition: all 1s;
+}
+
+.result {
+  color: white;
+}
+#r {
+  background-color: black;
+  color: aliceblue;
+}
+
+#p {
+  background-color: black;
+  color: aliceblue;
+}
+
+#s {
+  background-color: black;
+  color: aliceblue;
+}
+
+.message {
+  color: white;
+}
+.reset {
+  margin: auto;
+  border-width: 3px white;
+  background-color: rgb(56, 205, 255);
+  color: whitesmoke;
 }
