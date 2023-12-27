@@ -1,5 +1,5 @@
-let user;
-let computer;
+let userPoint = 0;
+let compPoint = 0;
 let r = document.getElementById("r");
 let p = document.getElementById("p");
 let s = document.getElementById("s");
@@ -35,15 +35,18 @@ function compchoice() {
 }
 
 function result(user, comp) {
+  console.log(user, comp);
   if (user == comp) {
-    console.log("Draw");
+    res.innerHTML = `Computer picked ${comp}. It's a DRAW!`;
   } else if (
     (user == "Rock" && comp == "Scissor") ||
     (user == "Paper" && comp == "Rock") ||
     (user == "Scissor" && comp == "Paper")
   ) {
-    console.log("You win");
+    res.innerHTML = `Computer picked ${comp}. You WIN!`;
+    userScore.innerHTML = userPoint++;
   } else {
-    console.log("You lose");
+    res.innerHTML = `Computer picked ${comp}. You LOSE! `;
+    compScore.innerHTML = compPoint++;
   }
 }
