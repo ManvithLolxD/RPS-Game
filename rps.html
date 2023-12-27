@@ -12,11 +12,15 @@
     <!--scoreboard*/-->
     <div class="everything">
       <div class="scoreboard">
-        <div class="user" id="you">You</div>
-        <div class="compu" id="computer">Computer</div>
-        <span class="userscore">0</span>:<span class="userscore">0</span>
+        <div class="UserWrapper">
+          <div class="user" id="you">You</div>
+          <span class="userscore">0</span>
+        </div>
+        <div class="CompWrapper">
+          <div class="comp" id="computer">Computer</div>
+          <span class="userscore">0</span>
+        </div>
       </div>
-
       <div class="result">
         <h2>Computer chose Rock. You lost</h2>
       </div>
@@ -33,7 +37,7 @@
       </div>
 
       <div class="reset">
-        <button>Reset</button>
+        <button class="reset">Reset</button>
       </div>
     </div>
   </body>

@@ -14,7 +14,7 @@ h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  height: 75vh;
+  height: 50vh;
 }
 
 .everything {
@@ -24,55 +24,81 @@ body {
 }
 
 .scoreboard {
+  height: auto;
+  justify-content: space-between;
+  display: flex;
   color: white;
   padding: 10px 15px;
-  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 30%;
   border: 3px solid white;
   border-radius: 5px;
   text-align: center;
 }
-
-.choice {
+.choices {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin: 20px 0;
+}
+.UserWrapper {
+  width: 20%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  display: inline-block;
-  text-align: center;
-  padding: 10px 15px;
-  width: 200px;
-  border: 3px solid white;
-  border-radius: 5px;
-  text-align: center;
-  margin: auto;
-  border-radius: 100px;
+  margin: 0 20px;
 }
-.choice:hover {
-  transform: scale(110%);
-  transition: all 1s;
+.CompWrapper {
+  width: 20%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .result {
   color: white;
 }
-#r {
-  background-color: black;
-  color: aliceblue;
-}
-
-#p {
-  background-color: black;
-  color: aliceblue;
-}
-
-#s {
-  background-color: black;
-  color: aliceblue;
-}
 
 .message {
   color: white;
 }
-.reset {
-  margin: auto;
-  border-width: 3px white;
-  background-color: rgb(56, 205, 255);
-  color: whitesmoke;
+
+button,
+.choice {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button,
+.choice:hover,
+button,
+.choice:focus {
+  background-color: #f082ac;
 }
