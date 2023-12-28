@@ -43,10 +43,12 @@ function result(user, comp) {
     (user == "Paper" && comp == "Rock") ||
     (user == "Scissor" && comp == "Paper")
   ) {
-    userScore.innerHTML = userPoint++;
+    userPoint++;
+    userScore.innerHTML = userPoint;
     res.innerHTML = `Computer picked ${comp}. You WIN!`;
   } else {
-    compScore.innerHTML = compPoint++;
+    compPoint++;
+    compScore.innerHTML = compPoint;
     res.innerHTML = `Computer picked ${comp}. You LOSE! `;
   }
 }
