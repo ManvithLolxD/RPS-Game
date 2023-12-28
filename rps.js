@@ -43,10 +43,15 @@ function result(user, comp) {
     (user == "Paper" && comp == "Rock") ||
     (user == "Scissor" && comp == "Paper")
   ) {
-    res.innerHTML = `Computer picked ${comp}. You WIN!`;
     userScore.innerHTML = userPoint++;
+    res.innerHTML = `Computer picked ${comp}. You WIN!`;
   } else {
-    res.innerHTML = `Computer picked ${comp}. You LOSE! `;
     compScore.innerHTML = compPoint++;
+    res.innerHTML = `Computer picked ${comp}. You LOSE! `;
   }
 }
+
+rs.addEventListener("click", function () {
+  userScore.innerHTML = userPoint = 0;
+  compScore.innerHTML = compPoint = 0;
+});
